@@ -1,4 +1,5 @@
-# Enviro363RecycleApp
+# Enviro365
+# RecycleApp
 
 Enviro365, a leading environmental solutions company, is developing a waste sorting
 mobile application aimed at promoting sustainable waste management practices. We are a team taht is
