@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>delete</title>
+    <link rel="shortcut icon" href="./images/recycle-6-svgrepo-com.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body onload="fetchData()">
+    <center>
+
+        <h2>Delete</h2>
+
+        <div class="svgImage">
+            <img src="./images/bottle-svgrepo-com.svg">
+            <img src="./images/recycle-6-svgrepo-com.svg">
+            <img src="./images/leaf-svgrepo-com.svg">
+        </div>
+
+
+        <form method="post" onsubmit="deleteFormAction(this,document.getElementById('numberSelect').value)">
+
+            <select name="numberSelect" id="numberSelect" onclick="loadList()">
+                <option value="">Select id for row</option>
+            </select>
+
+            <input type="hidden" name="_method" value="DELETE">
+            <button type="delete">Delete</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>wasteName</th>
+                    <th>wasteType</th>
+                    <th>wasteDescription</th>
+                    <th>disposalGuidelines</th>
+                    <th>recycleTips</th>
+
+                </tr>
+            </thead>
+            <tbody id="dataList">
+
+            </tbody>
+        </table>
+        <div class="svgImage">
+            <img src="./images/recycle-5-svgrepo-com.svg">
+            <a href="http://localhost:8080/admin.html">return</a>
+            <img src="./images/tree-svgrepo-com.svg">
+        </div>
+    </center>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/edit.js"></script>
+</body>
+
+</html>

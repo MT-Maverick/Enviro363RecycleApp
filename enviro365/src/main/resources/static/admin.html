@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin</title>
+    <link rel="shortcut icon" href="./images/recycle-6-svgrepo-com.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body onload="fetchData()">
+    <center>
+
+        <h1>Admin</h1>
+
+        <div class="svgImage">
+            <img src="./images/bottle-svgrepo-com.svg">
+            <img src="./images/recycle-6-svgrepo-com.svg">
+            <img src="./images/leaf-svgrepo-com.svg">
+        </div>
+
+        <form action="admin" method="post" enctype="multipart/form-data">
+            <div id="category">
+                <label for="wasteType">wasteType</label>
+                <input type="text" name="wasteType" id="wasteType">
+
+                <label for="wasteName">wasteName</label>
+                <input type="text" name="wasteName" id="wasteName">
+
+                <label for="wasteDescription">wasteDescription</label>
+                <textarea name="wasteDescription" id="wasteDescription" cols="10" rows="5"></textarea>
+
+                <label for="disposalGuidelines">disposalGuidelines</label>
+                <textarea name="disposalGuidelines" id="disposalGuidelines" cols="10" rows="5"></textarea>
+
+                <label for="recycleTips">recycleTips</label>
+                <textarea name="recycleTips" id="recycleTips" cols="10" rows="5"></textarea>
+
+                <button type="submit">Upload</button>
+            </div>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>wasteName</th>
+                    <th>wasteType</th>
+                    <th>wasteDescription</th>
+                    <th>disposalGuidelines</th>
+                    <th>recycleTips</th>
+                </tr>
+            </thead>
+
+            <tbody id="dataList"></tbody>
+        </table>
+        <div id="footer">
+            <a href="http://localhost:8080/update.html">Update</a>
+            <a href="http://localhost:8080/">Home</a>
+            <a href="http://localhost:8080/delete.html">Remove</a>
+        </div>
+
+        <div class="svgImage">
+            <img src="./images/recycle-5-svgrepo-com.svg">
+            <img src="./images/tree-svgrepo-com.svg">
+        </div>
+
+    </center>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/edit.js"></script>
+</body>
+
+</html>

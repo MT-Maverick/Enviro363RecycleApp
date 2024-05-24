@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>waste</title>
+  <link rel="shortcut icon" href="./images/recycle-6-svgrepo-com.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body onload="fetchData()">
+  <center>
+
+    <h1>Waste page</h1>
+
+    <div class="svgImage">
+      <img src="./images/bottle-svgrepo-com.svg">
+      <img src="./images/recycle-6-svgrepo-com.svg">
+      <img src="./images/leaf-svgrepo-com.svg">
+    </div>
+
+    <div>
+      <label for="waste-type">search the type of material</label>
+      <input type="search" name="search" id="search">
+      <button type="submit">search</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>wasteName</th>
+          <th>wasteType</th>
+          <th>wasteDescription</th>
+        </tr>
+      </thead>
+      <tbody id="dataList">
+
+      </tbody>
+    </table>
+
+    <div class="svgImage">
+      <img src="./images/recycle-5-svgrepo-com.svg">
+      <a href="http://localhost:8080/index.html">return</a>
+      <img src="./images/tree-svgrepo-com.svg">
+    </div>
+  </center>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

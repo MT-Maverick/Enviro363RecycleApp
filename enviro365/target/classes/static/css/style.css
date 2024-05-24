@@ -1,0 +1,83 @@
+h1 {
+    color: blue;
+}
+
+h2 {
+    color: rgb(255, 170, 0);
+}
+
+h3 {
+    color: greenyellow
+}
+
+h4 {
+    text-decoration: underline;
+
+}
+
+p{
+    width: 60%;
+}
+
+#footer {
+    display: inline-flexbox;
+    justify-content: space-between;
+}
+
+a {
+    color: rgb(4, 102, 4);
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+}
+
+.links {
+    margin: 2%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+label {
+    color: blue
+}
+
+.svgImage {
+    display: inline-flex;
+    justify-content: space-evenly;
+    margin: 2%;
+    width: 80%;
+}
+
+table {
+    margin: 2%;
+    border: 2 solid;
+    padding: auto;
+}
+
+#category {
+    display: grid;
+    width: 60%;
+}
+
+th {
+    border: 1px solid;
+}
+
+td {
+
+    border-bottom: 1px solid;
+    padding: 1%;
+    text-align: left;
+}
+
+tr:hover {
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+#footer {
+    padding: 1%;
+}
