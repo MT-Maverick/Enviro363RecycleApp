@@ -1,3 +1,14 @@
+.active{
+    opacity: 0;
+    animation: anima 2s ease-out 1ms 1 forwards;
+}
+
+@keyframes anima {
+    100%{
+        opacity: 1;
+    }
+}
+
 h1 {
     color: blue;
 }
@@ -7,11 +18,11 @@ h2 {
 }
 
 h3 {
-    color: greenyellow
+    color: greenyellow;
 }
 
 h4 {
-    text-decoration: underline;
+    text-decoration: none;
 
 }
 
