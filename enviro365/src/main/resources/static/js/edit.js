@@ -32,8 +32,8 @@ function deleteFormAction(form, id) {
 
 function updateFormAction(form,id){
     
-    if(confirm('are you sure you wish to update this document ?')?'yes':'no'){
-
+    if(confirm('are you sure you wish to update this document ?')?true:false){
+        
         form.action = '/update/'+id+"/"+wasteType.value+"/"+wasteName.value+"/"+wasteDescription.value+"/"+disposalGuidelines.value+"/"+recycleTips.value;
     }
 }
