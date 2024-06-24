@@ -11,7 +11,7 @@ this is a springboot application to showcase restful api control and configurati
 
 # Run Application:
 
-To Run the application go to the src/main folder then run:
+To Run the application go to the src/main folder then type:
 
 mvn spring-boot:run
 
