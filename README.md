@@ -15,4 +15,4 @@ To Run the application go to the src/main folder then type:
 
 mvn spring-boot:run
 
-to run the application.
+on the terminal to run the application.
